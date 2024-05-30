@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  speed: 5
+  speed: 8
   blackBulletPrefab: {fileID: 117129014066213062, guid: bf940cf3154920a4f9fdf16329c1114f, type: 3}
   whiteBulletPrefab: {fileID: 1071946968877338544, guid: b0ba03f9946e819439abc80343de4e11, type: 3}
   shootPoint: {fileID: 563672847}
@@ -561,7 +561,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1014488310}
   - component: {fileID: 1014488309}
-  - component: {fileID: 1014488308}
   - component: {fileID: 1014488307}
   m_Layer: 0
   m_Name: GameManager
@@ -580,18 +579,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f4b665ab0d9cfb4e8c2b9d4891812a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1014488308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014488306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b875361b8499783468fed00b64c27de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1014488309
@@ -652,9 +639,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackEnemyPrefab: {fileID: 4956317804312642456, guid: 46fb3e61608ea3e449e8f33b8d05da4f, type: 3}
   whiteEnemyPrefab: {fileID: 2683098924016103646, guid: 9d358ec5ad751b14587b50e8f3ff9c1e, type: 3}
-  spawnDelay: 2
-  spawnRadius: 1
-  yOffset: 10
+  spawnInterval: 0.5
+  spawnYPosition: 10
+  spawnXMin: -5
+  spawnXMax: 5
 --- !u!4 &1473576108
 Transform:
   m_ObjectHideFlags: 0
@@ -664,7 +652,7 @@ Transform:
   m_GameObject: {fileID: 1473576106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32572868, y: 3.088, z: -0.3663931}
+  m_LocalPosition: {x: -0.32572868, y: 6.93, z: -0.3663931}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

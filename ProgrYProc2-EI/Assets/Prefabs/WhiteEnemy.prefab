@@ -95,4 +95,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  speed: 0
   requiredBulletType: white
+  firePoint: {fileID: 8451059684895294918}
+  bulletPrefabShoot1: {fileID: 7022892615584503816, guid: 06c2383f11a6ce447a41e68be0970f3d, type: 3}
+  bulletPrefabShoot2: {fileID: 8056067781797194505, guid: 6018ad3b1619bba4a9a03da509bdbfdc, type: 3}
+--- !u!4 &8451059684895294918 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1494098348016580224, guid: 46fb3e61608ea3e449e8f33b8d05da4f, type: 3}
+  m_PrefabInstance: {fileID: 7058311088911790918}
+  m_PrefabAsset: {fileID: 0}
